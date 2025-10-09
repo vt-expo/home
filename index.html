@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VT-Expo</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <!-- Навигация -->
+  <header>
+    <div class="container">
+      <div class="logo">
+        <a href="#"><img src="./img/logo.png" alt="VT-Expo логотип"></a>
+      </div>
+
+      <!-- Кнопка-гамбургер -->
+      <button class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav id="nav-menu">
+        <a href="#about">О компании</a>
+        <a href="#form">Консультация</a>
+        <a href="#contacts">Контакты</a>
+        <a href="catalog.html">Каталог</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Главный экран -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-text">
+        <h1>Продажа и установка видеодомофонов</h1>
+        <p>Надежные системы безопасности для вашего дома и бизнеса.</p>
+        <div class="hero__buttons">
+          <a href="#form" class="btn">Заказать консультацию</a>
+          <a href="catalog.html" class="btn">Перейти в каталог</a>
+        </div>
+      </div>
+      <img src="./img/Современная система видеодомофона.png" alt="VT-Expo оборудование">
+    </div>
+  </section>
+
+  <!-- О компании -->
+  <section id="about">
+    <div class="container">
+      <h2>О компании</h2>
+      <p>Компания VT-Expo поставляет оборудование для систем безопасности и видеонаблюдения. 80% каталога составляют:
+        видеодомофоны, видеокамеры, видеорегистраторы и вызывные панели. Мы сотрудничаем с производителями оборудования:
+        Commax, Activision, RVI, Jukka и другими.</p>
+      <p>Мы работаем с частными клиентами и с юридическими. В компанию обращаются клиенты, заинтересованные в установке
+        видеонаблюдения на автомойках, складах, в магазинах и на других объектах.</p>
+      <p>VT-Expo предлагает проверенную продукцию по выгодной цене. Наши менеджеры помогут подобрать технику, а
+        монтажные
+        организации — установить её.</p>
+
+      <h3>Преимущества</h3>
+      <ul>
+        <li><strong>Опыт:</strong> реализовали множество проектов любой сложности.</li>
+        <li><strong>Качество:</strong> используем только протестированное оборудование.</li>
+        <li><strong>Выгода:</strong> доступные цены и программа лояльности.</li>
+      </ul>
+
+      <a href="catalog.html" class="btn">Перейти в каталог</a>
+    </div>
+  </section>
+
+  <!-- Форма консультации -->
+  <section id="form">
+    <div class="container">
+      <h2>Заказать консультацию</h2>
+      <div class="form-container">
+        <form>
+          <input type="text" name="name" placeholder="Ваше имя" required>
+          <input type="tel" name="phone" placeholder="Номер телефона" required>
+          <button type="submit">Отправить</button>
+        </form>
+        <!-- <a href="catalog.html" class="btn">Перейти в каталог</a> -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Контакты -->
+  <section id="contacts">
+    <div class="container">
+      <div class="contacts-container">
+        <div class="contacts-info">
+          <h2>Контакты</h2>
+          <p><strong>Адрес:</strong> г. Москва, Нахимовский проспект, дом 24</p>
+          <p><strong>Время работы:</strong> Понедельник–Воскресенье с 10:00 до 20:00</p>
+          <p><a href="tel:+74952115682" class="phone">+7 (495) 211-56-82</a></p>
+          <p><a href="mailto:info@vt-expo.ru" class="email">info@vt-expo.ru</a></p>
+        </div>
+
+        <div class="contacts-map">
+          <iframe
+            src="https://yandex.com.tr/map-widget/v1/?ll=37.584860%2C55.671479&mode=search&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D100681546866&z=20"
+            allowfullscreen="true"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Футер -->
+  <footer>
+    <div class="container footer__container">
+      <p>&copy; 2025 VT-Expo. Все права защищены.</p>
+      <p>
+        <a href="#">Политика конфиденциальности</a> |
+        <a href="#">Пользовательское соглашение</a>
+      </p>
+      <p>
+        ИП Кадильников С. Н.<br>
+        Адрес: 117218, г. Москва, Нахимовский проспект, дом 24, зал 2, место 91.<br>
+        ИНН 772208605524, ОГРН 307770000557351
+      </p>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
