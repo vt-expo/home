@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VT-Expo catalog</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./catalog.css">
+</head>
+
+<body>
+    <!-- Навигация -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="#"><img src="./img/logo.png" alt="VT-Expo логотип"></a>
+            </div>
+
+            <!-- Кнопка-гамбургер -->
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav id="nav-menu">
+                <a href="./index.html">Главная</a>
+                <a href="#contacts">Контакты</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Главный экран -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-text">
+                <h1>Каталог нашей продукции</h1>
+                <p>Надежные системы безопасности для вашего дома и бизнеса.</p>
+            </div>
+            <img src="./img/Современная система видеодомофона.png" alt="VT-Expo оборудование">
+        </div>
+    </section>
+
+    <section class="catalog">
+        <div class="container">
+            <h2>Каталог</h2>
+            <button id="openCategories">Выбрать категорию</button>
+            <div id="priceFilter">
+                <input type="number" id="minPrice" placeholder="Мин цена">
+                <input type="number" id="maxPrice" placeholder="Макс цена">
+                <button id="applyPrice">Применить</button>
+            </div>
+
+            <div id="products"></div>
+        </div>
+    </section>
+
+
+    <!-- Контакты -->
+    <section id="contacts">
+        <div class="container">
+            <div class="contacts-container">
+                <div class="contacts-info">
+                    <h2>Контакты</h2>
+                    <p><strong>Адрес:</strong> г. Москва, Нахимовский проспект, дом 24</p>
+                    <p><strong>Время работы:</strong> Понедельник–Воскресенье с 10:00 до 20:00</p>
+                    <p><a href="tel:+74952115682" class="phone">+7 (495) 211-56-82</a></p>
+                    <p><a href="mailto:info@vt-expo.ru" class="email">info@vt-expo.ru</a></p>
+                </div>
+
+                <!-- <div >
+          <iframe src="https://yandex.com.tr/maps/-/CLRDM8-Z" allowfullscreen="true"></iframe>
+        </div> -->
+                <div class="contacts-map" style="position:relative;overflow:hidden;"><a
+                        href="https://yandex.com.tr/maps/org/vt_expo/100681546866/?utm_medium=mapframe&utm_source=maps"
+                        style="color:#eee;font-size:12px;position:absolute;top:0px;">Vt-Expo</a><a
+                        href="https://yandex.com.tr/maps/213/moscow/category/security_and_alarm_systems/184105350/?utm_medium=mapframe&utm_source=maps"
+                        style="color:#eee;font-size:12px;position:absolute;top:14px;">Системы безопасности и охраны в
+                        Москве</a><a
+                        href="https://yandex.com.tr/maps/213/moscow/category/showroom/241832957813/?utm_medium=mapframe&utm_source=maps"
+                        style="color:#eee;font-size:12px;position:absolute;top:28px;">Шоу-рум в Москве</a><iframe
+                        src="https://yandex.com.tr/map-widget/v1/?from=mapframe&ll=37.585493%2C55.671406&mode=search&oid=100681546866&ol=biz&pt=37.584443%2C55.671447&sctx=ZAAAAAgBEAAaKAoSCTIdOj3vykJAEdofKLft1UtAEhIJbZBJRs7Cbj8R9kGWBRN%2FVD8iBgABAgMEBSgKOABAor4JSAFqAnRynQHNzMw9oAEAqAEAvQEDONsOwgEG8vjZiPcCggIHdnQgZXhwb4oCAJICAJoCDGRlc2t0b3AtbWFwcw%3D%3D&sll=37.585493%2C55.671406&source=mapframe&sspn=0.015020%2C0.005002&text=vt%20expo&utm_source=mapframe&z=15"
+                        width="560" height="400" frameborder="1" allowfullscreen="true"
+                        style="position:relative;"></iframe></div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer>
+        <div class="container footer__container">
+            <p>&copy; 2025 VT-Expo. Все права защищены.</p>
+            <p>
+                <a href="#">Политика конфиденциальности</a> |
+                <a href="#">Пользовательское соглашение</a>
+            </p>
+            <p>
+                ИП Кадильников С. Н.<br>
+                Адрес: 117218, г. Москва, Нахимовский проспект, дом 24, зал 2, место 91.<br>
+                ИНН 772208605524, ОГРН 307770000557351
+            </p>
+        </div>
+    </footer>
+    <!-- Модальное окно -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span id="modalClose" class="close">&times;</span>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <div id="categoryModal" class="modal">
+        <div class="modal-content">
+            <h3>Выберите категорию</h3>
+            <div id="categoryList"></div>
+        </div>
+    </div>
+
+    <script src="./catalog.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
