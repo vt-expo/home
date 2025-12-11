@@ -289,7 +289,7 @@ function applyPriceFilter(products) {
 
   renderProducts(filtered);
 }
-
+        
 
 
 function initPriceFilter(products) {
